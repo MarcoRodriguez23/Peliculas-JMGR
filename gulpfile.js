@@ -11,7 +11,6 @@ const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const cache = require('gulp-cache');
 const webp = require('gulp-webp');
-const squoosh = require('gulp-squoosh');
 
 
 const paths = {

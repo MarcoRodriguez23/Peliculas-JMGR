@@ -1,0 +1,95 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.boton{
+    @include boton();
+    background-color: $amarillo;
+}
+
+
+.principal-izq{
+    padding: 2rem 2rem;
+    .imagen-principal{
+        width: 60%;
+        margin: 4rem auto 0 auto;
+    }
+    .texto-principal{
+        text-align: center;
+    }
+
+    @include tablet{
+        @include grid(2,2.4rem);
+        grid-template-columns: 3fr 2fr;
+        h2,a{
+            margin: 0;
+        }
+        
+        .imagen-principal{
+            width: 40rem;
+            margin: auto;
+            
+        }
+        .texto-principal{
+            margin: 2rem 0;
+            h2,p{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.principal-der{
+    padding: 2rem 2rem;
+    .imagen-principal{
+        width: 60%;
+        margin: 4rem auto 0 auto;
+    }
+    .texto-principal{
+        text-align: center;
+    }
+
+    @include tablet{
+        @include grid(2,2.4rem);
+        grid-template-columns: 1fr 2fr;
+        grid-auto-flow: column;
+        h2,a{
+            margin: 0;
+        }
+        
+        .imagen-principal{
+            grid-column: 1/2;
+            width: 40rem;
+            margin: auto;
+        }
+        .texto-principal{
+            grid-column: 2/3;
+            margin: auto 0;
+            h2,p{
+                text-align: end;
+            }
+        }
+    }
+}
+
+.titulo-bienvenida{
+    h2{
+        color: $blanco;
+        text-shadow: $negro 0.2rem 0.1rem 0.2rem;
+        font-weight: $delgada;
+        font-size: 4.2rem;
+        @include tablet{
+            font-size: 8rem;
+        }
+    }
+}
+
+.sombra{
+    -webkit-box-shadow: 2px 12px 26px 8px rgba(0,0,0,0.20);
+    -moz-box-shadow: 2px 12px 26px 8px rgba(0,0,0,0.20);
+    box-shadow: 2px 12px 26px 8px rgba(0,0,0,0.20);
+}
