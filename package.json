@@ -1,40 +1,14 @@
 {
-  "name": "peliculas",
-  "version": "1.0.0",
-  "description": "Peliculas que he visto con JMGR",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MarcoRodriguez23/Peliculas-JMGR.git"
-  },
-  "keywords": [
-    "peliculas",
-    "catalogo",
-    "practica"
-  ],
-  "author": "Marco Rodriguez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MarcoRodriguez23/Peliculas-JMGR/issues"
-  },
-  "homepage": "https://github.com/MarcoRodriguez23/Peliculas-JMGR#readme",
-  "devDependencies": {
-    "cssnano": "^5.0.12",
-    "gulp": "^4.0.2",
-    "gulp-cache": "^1.1.3",
-    "gulp-clean": "^0.4.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-notify": "^4.0.0",
-    "gulp-postcss": "^9.0.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser-js": "^5.2.2",
-    "gulp-webp": "^4.0.1",
-    "terser": "^5.10.0"
-  }
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^0.25",
+        "laravel-vite-plugin": "^0.2.1",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "vite": "^2.9.11"
+    }
 }
