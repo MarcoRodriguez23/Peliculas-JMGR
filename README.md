@@ -64,3 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
+# Peliculas-JMGR
+
+Proyecto personal, se trata de un pequeño sitio de reseña de peliculas, las cuales he visto junto a mi pareja a lo largo de nuestra relación
+>>>>>>> a33da4d8df5d1cb28dcc33428cd90a9b9e53a6f2
