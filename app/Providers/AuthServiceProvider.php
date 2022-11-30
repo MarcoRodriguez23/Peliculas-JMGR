@@ -29,12 +29,13 @@ class AuthServiceProvider extends ServiceProvider
 
         VerifyEmail::toMailUsing(function($notifiable,$url){
             return(new MailMessage)
-            ->greeting('Hola cinefilo !!!!')
-            ->subject('Confirmación de cuenta en blog de Peliculas')
-            ->line('Estas a un paso de formar parte del blog, por favor confirma tu cuenta dando clic en el siguiente botón')
-            ->action('verificar cuenta',$url)
-            ->line('Si no creaste ninguna cuenta, por favor ignora este correo')
-            ->salutation('Saludos por parte de Blog peliculas');
+            ->greeting('Bienvenido a Our-Movies.com !!')
+            ->subject('Confirmación de cuenta Our-Movies.com')
+            ->line('Por favor da click en el siguiente botón para dar de alta tu cuenta y poder formar parte de está red social.')
+            ->action('Activar cuenta',$url)
+            ->line('Si no creaste ninguna cuenta, por favor ignora este Email')
+            ->salutation('Saludos por parte de Our-Movies.com');
         });
+
     }
 }

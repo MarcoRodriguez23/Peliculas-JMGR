@@ -21,4 +21,16 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth','verified'])->name('dashboard');
 
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/dashboard',[Controller::class,'function'])->name('controller.index');
+//Route::get('/search-user',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+//Route::get('/',[Controller::class,'function'])->name('controller.function');
+
 require __DIR__.'/auth.php';
