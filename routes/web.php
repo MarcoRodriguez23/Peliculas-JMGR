@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PerfilController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,11 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth','verified'])->name('dashboard');
 
+require __DIR__.'/auth.php';
+
 //Route::get('/',[Controller::class,'function'])->name('controller.function');
 //Route::get('/dashboard',[Controller::class,'function'])->name('controller.index');
-//Route::get('/search-user',[Controller::class,'function'])->name('controller.function');
+Route::get('/{user:username}',[PerfilController::class,'index'])->name('perfil.index');
 //Route::get('/',[Controller::class,'function'])->name('controller.function');
 //Route::get('/',[Controller::class,'function'])->name('controller.function');
 //Route::get('/',[Controller::class,'function'])->name('controller.function');
@@ -33,4 +36,4 @@ Route::get('/dashboard', function () {
 //Route::get('/',[Controller::class,'function'])->name('controller.function');
 //Route::get('/',[Controller::class,'function'])->name('controller.function');
 
-require __DIR__.'/auth.php';
+

@@ -25,6 +25,13 @@
 
                 <x-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus placeholder="Ingresa tu apellido aqui"/>
             </div>
+            
+            <!--User name-->
+            <div>
+                <x-label for="username" :value="__('Nombre de usuario')" />
+
+                <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus placeholder="Escribre un nombre de usuario."/>
+            </div>
 
             <!-- Email Address -->
             <div class="mt-4">
@@ -59,11 +66,11 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
+                    {{ __('¿Ya tienes una cuenta?') }}
                 </a>
 
                 <x-button class="ml-4">
-                    {{ __('Register') }}
+                    {{ __('Registrarse') }}
                 </x-button>
             </div>
         </form>

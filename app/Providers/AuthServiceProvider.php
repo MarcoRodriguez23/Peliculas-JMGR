@@ -29,8 +29,8 @@ class AuthServiceProvider extends ServiceProvider
 
         VerifyEmail::toMailUsing(function($notifiable,$url){
             return(new MailMessage)
-            ->greeting('Bienvenido a Our-Movies.com !!')
             ->subject('Confirmación de cuenta Our-Movies.com')
+            ->greeting('Bienvenido a Our-Movies.com !!')
             ->line('Por favor da click en el siguiente botón para dar de alta tu cuenta y poder formar parte de está red social.')
             ->action('Activar cuenta',$url)
             ->line('Si no creaste ninguna cuenta, por favor ignora este Email')
